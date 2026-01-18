@@ -1,0 +1,927 @@
+.id                 907
+.int_stack_count    2
+.string_stack_count 0
+.int_var_count      11
+.string_var_count   0
+   get_varbit             4611
+   iconst                 1
+   if_icmpeq              LABEL4
+   jump                   LABEL12
+LABEL4:
+   iconst                 905
+   iconst                 -2147483640
+   iload                  1
+   iconst                 0
+   sconst                 "ig1"
+   iload                  0
+   if_setonkey           
+   jump                   LABEL19
+LABEL12:
+   iconst                 905
+   iconst                 -2147483640
+   iload                  1
+   iconst                 1
+   sconst                 "ig1"
+   iload                  0
+   if_setonkey           
+LABEL19:
+   iload                  0
+   iload                  1
+   invoke                 909
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iconst                 10551389
+   enum                  
+   istore                 2
+   iload                  2
+   iconst                 -1
+   if_icmpne              LABEL32
+   jump                   LABEL36
+LABEL32:
+   get_varbit             542
+   invoke                 633
+   iload                  2
+   if_sethide            
+LABEL36:
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iconst                 10551326
+   enum                  
+   istore                 2
+   iload                  2
+   iconst                 -1
+   if_icmpne              LABEL46
+   jump                   LABEL60
+LABEL46:
+   get_varbit             542
+   iconst                 1
+   if_icmpeq              LABEL53
+   get_varbit             4606
+   iconst                 0
+   if_icmpne              LABEL53
+   jump                   LABEL57
+LABEL53:
+   iconst                 1
+   iload                  2
+   if_sethide            
+   jump                   LABEL60
+LABEL57:
+   iconst                 0
+   iload                  2
+   if_sethide            
+LABEL60:
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iconst                 10551297
+   enum                  
+   istore                 3
+   iconst                 0
+   istore                 4
+   iconst                 0
+   istore                 5
+   viewport_getfov       
+   istore                 4
+   istore                 5
+   get_varc_int           73
+   iconst                 0
+   if_icmpgt              LABEL77
+   jump                   LABEL91
+LABEL77:
+   get_varc_int           74
+   iconst                 0
+   if_icmpgt              LABEL81
+   jump                   LABEL91
+LABEL81:
+   iload                  5
+   get_varc_int           73
+   if_icmpne              LABEL88
+   iload                  4
+   get_varc_int           74
+   if_icmpne              LABEL88
+   jump                   LABEL91
+LABEL88:
+   get_varc_int           73
+   get_varc_int           74
+   invoke                 42
+LABEL91:
+   iconst                 39
+   iconst                 -2147483646
+   sconst                 "i"
+   iload                  3
+   if_setonscrollwheel   
+   iconst                 1
+   iload                  3
+   2309                  
+   get_varbit             3756
+   iconst                 1
+   sub                   
+   istore                 6
+   iconst                 105
+   iconst                 73
+   iconst                 1139
+   iload                  6
+   enum                  
+   istore                 7
+   iconst                 105
+   iconst                 73
+   iconst                 1138
+   iload                  6
+   enum                  
+   istore                 8
+   iload                  7
+   iconst                 -1
+   if_icmpne              LABEL119
+   jump                   LABEL155
+LABEL119:
+   iload                  8
+   iconst                 -1
+   if_icmpne              LABEL123
+   jump                   LABEL155
+LABEL123:
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iload                  7
+   enum                  
+   istore                 7
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iload                  8
+   enum                  
+   istore                 8
+   iload                  7
+   iconst                 -1
+   if_icmpne              LABEL139
+   jump                   LABEL150
+LABEL139:
+   iload                  8
+   iconst                 -1
+   if_icmpne              LABEL143
+   jump                   LABEL150
+LABEL143:
+   iconst                 906
+   iload                  7
+   iload                  8
+   sconst                 "II"
+   iload                  0
+   if_setontimer         
+   jump                   LABEL154
+LABEL150:
+   iconst                 -1
+   sconst                 ""
+   iload                  0
+   if_setontimer         
+LABEL154:
+   jump                   LABEL159
+LABEL155:
+   iconst                 -1
+   sconst                 ""
+   iload                  0
+   if_setontimer         
+LABEL159:
+   iload                  1
+   invoke                 912
+   iconst                 105
+   iconst                 73
+   iconst                 1138
+   iconst                 2
+   enum                  
+   istore                 9
+   iconst                 105
+   iconst                 73
+   iconst                 1139
+   iconst                 2
+   enum                  
+   istore                 7
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iload                  9
+   enum                  
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iload                  7
+   enum                  
+   istore                 7
+   istore                 9
+   iload                  9
+   iconst                 -1
+   if_icmpne              LABEL189
+   jump                   LABEL258
+LABEL189:
+   iload                  7
+   iconst                 -1
+   if_icmpne              LABEL193
+   jump                   LABEL258
+LABEL193:
+   get_varbit             8168
+   switch                
+      1: LABEL203
+      2: LABEL211
+      3: LABEL219
+      4: LABEL243
+      5: LABEL251
+   iconst                 1
+   sconst                 "Character Summary"
+   iload                  9
+   if_setop              
+   iconst                 2309
+   iload                  7
+   if_setgraphic         
+   jump                   LABEL258
+LABEL203:
+   iconst                 1
+   sconst                 "Quest List"
+   iload                  9
+   if_setop              
+   iconst                 776
+   iload                  7
+   if_setgraphic         
+   jump                   LABEL258
+LABEL211:
+   iconst                 1
+   sconst                 "Achievement Diaries"
+   iload                  9
+   if_setop              
+   iconst                 1299
+   iload                  7
+   if_setgraphic         
+   jump                   LABEL258
+LABEL219:
+   invoke                 6790
+   iconst                 1
+   if_icmpeq              LABEL223
+   jump                   LABEL235
+LABEL223:
+   get_varbit             14582
+   iconst                 0
+   if_icmpeq              LABEL227
+   jump                   LABEL235
+LABEL227:
+   iconst                 1
+   sconst                 "Adventure Paths"
+   iload                  9
+   if_setop              
+   iconst                 1713
+   iload                  7
+   if_setgraphic         
+   jump                   LABEL242
+LABEL235:
+   iconst                 1
+   sconst                 "Kourend Tasks"
+   iload                  9
+   if_setop              
+   iconst                 1414
+   iload                  7
+   if_setgraphic         
+LABEL242:
+   jump                   LABEL258
+LABEL243:
+   iconst                 1
+   sconst                 "Adventure Paths"
+   iload                  9
+   if_setop              
+   iconst                 1713
+   iload                  7
+   if_setgraphic         
+   jump                   LABEL258
+LABEL251:
+   iconst                 1
+   sconst                 "Events"
+   iload                  9
+   if_setop              
+   iconst                 2303
+   iload                  7
+   if_setgraphic         
+LABEL258:
+   iconst                 105
+   iconst                 73
+   iconst                 1139
+   iconst                 6
+   enum                  
+   istore                 7
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iload                  7
+   enum                  
+   istore                 7
+   iload                  7
+   iconst                 -1
+   if_icmpne              LABEL274
+   jump                   LABEL292
+LABEL274:
+   get_varbit             4070
+   switch                
+      1: LABEL277
+      2: LABEL281
+      3: LABEL285
+   jump                   LABEL289
+LABEL277:
+   iconst                 1583
+   iload                  7
+   if_setgraphic         
+   jump                   LABEL292
+LABEL281:
+   iconst                 1584
+   iload                  7
+   if_setgraphic         
+   jump                   LABEL292
+LABEL285:
+   iconst                 1711
+   iload                  7
+   if_setgraphic         
+   jump                   LABEL292
+LABEL289:
+   iconst                 780
+   iload                  7
+   if_setgraphic         
+LABEL292:
+   iconst                 105
+   iconst                 73
+   iconst                 1138
+   iconst                 6
+   enum                  
+   istore                 9
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iload                  9
+   enum                  
+   istore                 9
+   iload                  9
+   iconst                 -1
+   if_icmpne              LABEL308
+   jump                   LABEL330
+LABEL308:
+   invoke                 1972
+   iconst                 1
+   if_icmpeq              LABEL312
+   jump                   LABEL317
+LABEL312:
+   iconst                 2
+   sconst                 ""
+   iload                  9
+   if_setop              
+   jump                   LABEL330
+LABEL317:
+   get_varbit             6718
+   iconst                 1
+   if_icmpeq              LABEL321
+   jump                   LABEL326
+LABEL321:
+   iconst                 2
+   sconst                 "Enable spell filtering"
+   iload                  9
+   if_setop              
+   jump                   LABEL330
+LABEL326:
+   iconst                 2
+   sconst                 "Disable spell filtering"
+   iload                  9
+   if_setop              
+LABEL330:
+   iconst                 105
+   iconst                 73
+   iconst                 1138
+   iconst                 9
+   enum                  
+   istore                 9
+   iconst                 105
+   iconst                 73
+   iconst                 1139
+   iconst                 9
+   enum                  
+   istore                 7
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iload                  9
+   enum                  
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iload                  7
+   enum                  
+   istore                 7
+   istore                 9
+   iload                  9
+   iconst                 -1
+   if_icmpne              LABEL358
+   jump                   LABEL381
+LABEL358:
+   iload                  7
+   iconst                 -1
+   if_icmpne              LABEL362
+   jump                   LABEL381
+LABEL362:
+   get_varbit             6516
+   iconst                 0
+   if_icmpeq              LABEL366
+   jump                   LABEL374
+LABEL366:
+   iconst                 1
+   sconst                 "Friends List"
+   iload                  9
+   if_setop              
+   iconst                 782
+   iload                  7
+   if_setgraphic         
+   jump                   LABEL381
+LABEL374:
+   iconst                 1
+   sconst                 "Ignore List"
+   iload                  9
+   if_setop              
+   iconst                 783
+   iload                  7
+   if_setgraphic         
+LABEL381:
+   iconst                 105
+   iconst                 73
+   iconst                 1138
+   iconst                 7
+   enum                  
+   iconst                 105
+   iconst                 73
+   iconst                 1139
+   iconst                 7
+   enum                  
+   istore                 7
+   istore                 9
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iload                  9
+   enum                  
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iload                  7
+   enum                  
+   istore                 7
+   istore                 9
+   iload                  9
+   iconst                 -1
+   if_icmpne              LABEL409
+   jump                   LABEL417
+LABEL409:
+   iconst                 1
+   iconst                 105
+   iconst                 115
+   iconst                 3839
+   get_varbit             13071
+   enum                  
+   iload                  9
+   if_setop              
+LABEL417:
+   iload                  7
+   iconst                 -1
+   if_icmpne              LABEL421
+   jump                   LABEL436
+LABEL421:
+   iconst                 105
+   iconst                 100
+   iconst                 3841
+   get_varbit             13071
+   enum                  
+   iload                  7
+   if_setgraphic         
+   iconst                 5303
+   iload                  7
+   iload                  9
+   iconst                 499
+   iconst                 1
+   sconst                 "IIY"
+   iload                  7
+   if_setonvartransmit   
+LABEL436:
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iconst                 10551333
+   enum                  
+   istore                 7
+   iload                  7
+   iconst                 -1
+   if_icmpne              LABEL446
+   jump                   LABEL463
+LABEL446:
+   get_varbit             4609
+   iconst                 1
+   if_icmpeq              LABEL450
+   jump                   LABEL457
+LABEL450:
+   iconst                 897
+   iload                  7
+   if_setgraphic         
+   iconst                 0
+   iload                  7
+   if_settrans           
+   jump                   LABEL463
+LABEL457:
+   iconst                 1040
+   iload                  7
+   if_setgraphic         
+   iconst                 150
+   iload                  7
+   if_settrans           
+LABEL463:
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iconst                 10551315
+   enum                  
+   istore                 7
+   iload                  7
+   iconst                 -1
+   if_icmpne              LABEL473
+   jump                   LABEL534
+LABEL473:
+   iload                  1
+   iconst                 1745
+   if_icmpeq              LABEL477
+   jump                   LABEL480
+LABEL477:
+   iload                  7
+   invoke                 3506
+   jump                   LABEL501
+LABEL480:
+   iload                  1
+   iconst                 1129
+   if_icmpeq              LABEL484
+   jump                   LABEL501
+LABEL484:
+   get_varbit             10465
+   iconst                 0
+   if_icmpgt              LABEL488
+   jump                   LABEL495
+LABEL488:
+   iconst                 15
+   iconst                 17
+   iconst                 2
+   iconst                 2
+   iload                  7
+   if_setposition        
+   jump                   LABEL501
+LABEL495:
+   iconst                 15
+   iconst                 13
+   iconst                 2
+   iconst                 2
+   iload                  7
+   if_setposition        
+LABEL501:
+   get_varbit             4605
+   iconst                 1
+   if_icmpeq              LABEL505
+   jump                   LABEL516
+LABEL505:
+   get_varbit             542
+   iconst                 0
+   if_icmpeq              LABEL509
+   jump                   LABEL516
+LABEL509:
+   iconst                 442
+   iload                  7
+   if_setgraphic         
+   iconst                 0
+   iload                  7
+   if_sethide            
+   jump                   LABEL534
+LABEL516:
+   get_varbit             5961
+   iconst                 1
+   if_icmpeq              LABEL520
+   jump                   LABEL531
+LABEL520:
+   get_varbit             542
+   iconst                 0
+   if_icmpeq              LABEL524
+   jump                   LABEL531
+LABEL524:
+   iconst                 2518
+   iload                  7
+   if_setgraphic         
+   iconst                 0
+   iload                  7
+   if_sethide            
+   jump                   LABEL534
+LABEL531:
+   iconst                 1
+   iload                  7
+   if_sethide            
+LABEL534:
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iconst                 10551302
+   enum                  
+   istore                 2
+   get_varbit             9528
+   iconst                 0
+   if_icmpeq              LABEL547
+   get_varbit             12383
+   iconst                 0
+   if_icmpeq              LABEL547
+   jump                   LABEL555
+LABEL547:
+   get_varbit             542
+   iconst                 0
+   if_icmpeq              LABEL551
+   jump                   LABEL555
+LABEL551:
+   iconst                 0
+   iload                  2
+   if_sethide            
+   jump                   LABEL558
+LABEL555:
+   iconst                 1
+   iload                  2
+   if_sethide            
+LABEL558:
+   clientclock           
+   set_varc_int           384
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iconst                 10551387
+   enum                  
+   istore                 2
+   get_varbit             542
+   iconst                 0
+   if_icmpeq              LABEL570
+   jump                   LABEL574
+LABEL570:
+   iconst                 0
+   iload                  2
+   if_sethide            
+   jump                   LABEL577
+LABEL574:
+   iconst                 1
+   iload                  2
+   if_sethide            
+LABEL577:
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iconst                 10551390
+   enum                  
+   istore                 2
+   iload                  1
+   iconst                 1745
+   if_icmpeq              LABEL587
+   jump                   LABEL609
+LABEL587:
+   get_varbit             542
+   iconst                 1
+   if_icmpeq              LABEL591
+   jump                   LABEL602
+LABEL591:
+   get_varbit             4606
+   iconst                 3
+   if_icmpeq              LABEL595
+   jump                   LABEL602
+LABEL595:
+   iconst                 0
+   iconst                 5
+   iconst                 1
+   iconst                 2
+   iload                  2
+   if_setposition        
+   jump                   LABEL608
+LABEL602:
+   iconst                 0
+   iconst                 0
+   iconst                 0
+   iconst                 0
+   iload                  2
+   if_setposition        
+LABEL608:
+   jump                   LABEL646
+LABEL609:
+   iload                  1
+   iconst                 1130
+   if_icmpeq              LABEL616
+   iload                  1
+   iconst                 1131
+   if_icmpeq              LABEL616
+   jump                   LABEL646
+LABEL616:
+   get_varbit             542
+   iconst                 1
+   if_icmpeq              LABEL620
+   jump                   LABEL640
+LABEL620:
+   get_varbit             4606
+   iconst                 3
+   if_icmpeq              LABEL624
+   jump                   LABEL631
+LABEL624:
+   iconst                 0
+   iconst                 0
+   iconst                 1
+   iconst                 2
+   iload                  2
+   if_setposition        
+   jump                   LABEL639
+LABEL631:
+   iconst                 0
+   iconst                 23
+   iconst                 -1
+   multiply              
+   iconst                 0
+   iconst                 2
+   iload                  2
+   if_setposition        
+LABEL639:
+   jump                   LABEL646
+LABEL640:
+   iconst                 0
+   iconst                 0
+   iconst                 0
+   iconst                 2
+   iload                  2
+   if_setposition        
+LABEL646:
+   iload                  1
+   iconst                 1129
+   if_icmpne              LABEL650
+   jump                   LABEL661
+LABEL650:
+   invoke                 4138
+   iconst                 1
+   if_icmpeq              LABEL654
+   jump                   LABEL658
+LABEL654:
+   iload                  1
+   iconst                 1
+   invoke                 4135
+   jump                   LABEL661
+LABEL658:
+   iload                  1
+   iconst                 0
+   invoke                 4135
+LABEL661:
+   iload                  1
+   iconst                 1745
+   if_icmpeq              LABEL665
+   jump                   LABEL682
+LABEL665:
+   get_varbit             542
+   iconst                 0
+   if_icmpeq              LABEL669
+   jump                   LABEL676
+LABEL669:
+   iconst                 0
+   iconst                 39387160
+   if_sethide            
+   iconst                 0
+   iconst                 39387161
+   if_sethide            
+   jump                   LABEL682
+LABEL676:
+   iconst                 1
+   iconst                 39387160
+   if_sethide            
+   iconst                 1
+   iconst                 39387161
+   if_sethide            
+LABEL682:
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iconst                 10551301
+   enum                  
+   istore                 2
+   get_varbit             542
+   iconst                 0
+   if_icmpeq              LABEL692
+   jump                   LABEL696
+LABEL692:
+   iconst                 0
+   iload                  2
+   if_sethide            
+   jump                   LABEL699
+LABEL696:
+   iconst                 1
+   iload                  2
+   if_sethide            
+LABEL699:
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iconst                 10551300
+   enum                  
+   istore                 2
+   get_varbit             542
+   iconst                 0
+   if_icmpeq              LABEL709
+   jump                   LABEL713
+LABEL709:
+   iconst                 0
+   iload                  2
+   if_sethide            
+   jump                   LABEL716
+LABEL713:
+   iconst                 1
+   iload                  2
+   if_sethide            
+LABEL716:
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iconst                 10551298
+   enum                  
+   istore                 2
+   get_varbit             542
+   iconst                 0
+   if_icmpeq              LABEL726
+   jump                   LABEL730
+LABEL726:
+   iconst                 0
+   iload                  2
+   if_sethide            
+   jump                   LABEL733
+LABEL730:
+   iconst                 1
+   iload                  2
+   if_sethide            
+LABEL733:
+   get_varbit             4134
+   iconst                 1
+   if_icmpeq              LABEL737
+   jump                   LABEL740
+LABEL737:
+   iconst                 0
+   mousecam              
+   jump                   LABEL742
+LABEL740:
+   iconst                 1
+   mousecam              
+LABEL742:
+   iconst                 0
+   istore                 10
+   get_varbit             5542
+   iconst                 1
+   if_icmpeq              LABEL748
+   jump                   LABEL750
+LABEL748:
+   iconst                 1
+   istore                 10
+LABEL750:
+   iload                  10
+   invoke                 2359
+   get_varbit             5599
+   iconst                 1
+   if_icmpeq              LABEL756
+   jump                   LABEL759
+LABEL756:
+   iconst                 1
+   setfolloweropslowpriority
+   jump                   LABEL761
+LABEL759:
+   iconst                 0
+   setfolloweropslowpriority
+LABEL761:
+   invoke                 4726
+   iconst                 73
+   iconst                 73
+   iload                  1
+   iconst                 10551332
+   enum                  
+   istore                 2
+   get_varbit             542
+   iconst                 0
+   if_icmpeq              LABEL772
+   jump                   LABEL776
+LABEL772:
+   iconst                 0
+   iload                  2
+   if_sethide            
+   jump                   LABEL779
+LABEL776:
+   iconst                 1
+   iload                  2
+   if_sethide            
+LABEL779:
+   get_varc_int           967
+   iconst                 0
+   if_icmpeq              LABEL783
+   jump                   LABEL786
+LABEL783:
+   invoke                 2475
+   invoke                 3643
+   invoke                 3644
+LABEL786:
+   invoke                 5326
+   iload                  1
+   invoke                 6682
+   iload                  1
+   invoke                 5355
+   return                
